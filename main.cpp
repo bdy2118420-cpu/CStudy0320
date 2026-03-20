@@ -39,5 +39,13 @@ int main()
 	}
 
 
+	delete[] WildBoar;
+	WildBoar = nullptr;
+	delete[] Goblin;
+	Goblin = nullptr;
+	delete[] Slime;
+	Slime = nullptr;
+
+
 	return 0;
 }
