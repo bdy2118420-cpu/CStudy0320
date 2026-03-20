@@ -1,10 +1,14 @@
 #pragma once
 #include "Monster.h"
-class AWildboar:public AMonster
+
+class AWildBoar : public AMonster
 {
 public:
-	AWildboar();
-	~AWildboar();
+	AWildBoar();
+	~AWildBoar();
 
+	void Move();
 };
+
+
 

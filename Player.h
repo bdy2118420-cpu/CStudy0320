@@ -1,16 +1,18 @@
 #pragma once
-#include "Gold.h"
-class APlayer:public AGold
+#include "Actor.h"
+
+class APlayer : public AActor
 {
 public:
 	APlayer();
 	~APlayer();
 
-	int PlayerX;
-	int PlayerY;
-
-	void Move();
-
 	void Attack();
+	void Collect();
+	void Die();
+	void Move();
+private:
+	int Gold;
 };
+
 

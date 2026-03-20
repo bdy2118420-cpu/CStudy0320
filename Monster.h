@@ -1,19 +1,20 @@
 #pragma once
+#include "Actor.h"
 
-
-
-class AMonster
+class AMonster : public AActor
 {
 public:
-
 	AMonster();
 	~AMonster();
 
-	int MonsterX = 0;
-	int MonsterY = 0;
-	int Mesh = 0;
+	void Die();
+	void Attack();
+	void Drop();
 
-	void MoveMonster();
+	void Move();
 
+
+
+	int Gold;
 };
 

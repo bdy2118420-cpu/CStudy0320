@@ -1,24 +1,21 @@
 #pragma once
-
-class APlayer;
-class AWildboar;
-class AGoblin;
-class ASlime;
-
 class UWorld
 {
 public:
 	UWorld();
 	~UWorld();
 
-	int* Worldsize;
+	class APlayer* Player;
 
-	void Lender();
+	class AGoblin* Goblins;
+	class ASlime* Slimes;
+	class AWildBoar* WildBoars;
 
-	AWildboar* Wildboar;
-	AGoblin* Goblin;
-	ASlime* Slime;
-	APlayer* Player;
+	int PlayerCount = 0;
+	int GoblinCount = 0;
+	int SlimeCount = 0;
+	int WildBoarCount = 0;
 
 };
+
 
